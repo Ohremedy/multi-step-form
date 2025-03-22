@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles2.css" />
+  </head>
+  <body>
+    <div class="flex-container shadow-box">
+      <div class="sidebar">
+        <li class="lock">
+          step 1 <br />
+          <span> <a href="./index.html">YOUR INFO</a></span>
+        </li>
+        <li>
+          <small>step 2</small><br />
+          <span> <a href="./index2.html" target="_parent">SELECT PLAN</a> </span>
+        </li>
+
+        <li>
+          step 3 <br />
+          <span><a href="./index3.html" target="_parent"> ADD ONS</a></span>
+        </li>
+
+        <li>
+          step 4 <br />
+          <span><a href="./index4.html"> SUMMARY</a></span>
+        </li>
+        
+      </div>
+
+      <div class="big">
+        <h2>Select your plan</h2>
+        <p class="please">You have the option of monthly or yearly billing</p>
+        <div class="freak">
+          <div class="rectangle">
+            <img src="./images/icon-arcade.svg" />
+            <p class="charges">Arcade<br> <span>$9/mo</span></p>
+          </div>
+          <div class="rectangle">
+            <img src="./images/icon-advanced.svg" />
+            <p class="charges">Advanced<br> <span>$12/mo</span></p>
+          </div>
+          <div class="rectangle">
+            <img src="./images/icon-pro.svg" />
+            <p class="charges">Pro<br> <span>$15/mo</span></p>
+          </div>
+        </div>
+        <div class="toggle-container">
+            <label class="monthly">Monthly</label>
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="toggle-switch"></label>
+                <label class="yearly"> Yearly</label>
+
+
+           
+        </div>
+        <div>
+        <a href="./index.html" class="back"> Back</a>
+        <a href="./index3.html"class="next">Next step </a>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

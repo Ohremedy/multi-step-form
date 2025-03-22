@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sliding page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="flex-container shadow-box">
+      <div class="sidebar">
+        <li class="lock">
+          step 1 <br />
+          <span> <a href="./index.html">YOUR INFO</a></span>
+        </li>
+        <li>
+          <small>step 2</small><br />
+          <span> <a href="./index2.html" target="_parent">SELECT PLAN</a> </span>
+        </li>
+
+        <li>
+          step 3 <br />
+          <span><a href="./index3.html" target="_parent"> ADD ONS</a></span>
+        </li>
+
+        <li>
+          step 4 <br />
+          <span><a href="./index4.html"> SUMMARY</a></span>
+        </li>
+        
+      </div>
+
+      <div class="big">
+        <h2>Personal info</h2>
+        <p class="please">
+          Please provide your name,email address and phone number
+        </p>
+        <form>
+          <label for="name"> Name:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value="Vanessa Mint"
+            required
+          />
+        </form>
+        <form>
+          <label for="email address"> Email address:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value="vanessamint@"
+            required
+          />
+        </form>
+        <form>
+          <label for="phone number"> Phone number:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value="eg +1 234 567 890 "
+            required
+          /><br />
+         <a href="./index2.html"class="next">Next step </a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

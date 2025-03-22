@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #eef5ff;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.shadow-box {
+  width: 600px;
+  height: 448px;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 5px;
+  width: 600px;
+  height: 448px;
+  justify-self: center;
+  margin-top: 70px;
+  box-shadow: black;
+  justify-content: center;
+}
+.sidebar {
+  background-image: url(./images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-direction: column;
+  color: white;
+  list-style-type: circle;
+  justify-content: flex-start;
+}
+.lock {
+  margin-top: 68px;
+}
+.big {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+input {
+  padding-top: 3px;
+  padding-right: 100px;
+  color: grey;
+
+}
+.please {
+  font-size: 12px;
+  color: grey;
+}
+
+
+.next {
+  background-color: #174a8b;
+  padding: 5px 8px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 70px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+@media (max-width :768px) {
+  .flex-container{
+    width: 500px;
+    height: 400px;
+    flex-direction: column;
+  }
+  .next{
+    margin-top: 30px;
+    margin-right: 50%;
+  }
+  .sidebar {
+    background-image: url(./images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+  
+    height: 448px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-direction: row;
+    color: white;
+    list-style-type: circle;
+    justify-content: flex-start;
+  }
+  next {
+    /* margin-top: 30px; */
+    margin-right: 50%;
+  }
+  .freak{
+    width: 300px;
+      }
+      .big{
+        width: 100%;
+      }
+      .lock {
+        margin-top:0px;
+    }
+    }
+    @media (max-width: 768px) {
+    .sidebar{
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+}
+
+  
+

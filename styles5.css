@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #eef5ff;
+
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.shadow-box {
+  width: 600px;
+  height: 448px;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.change {
+  text-decoration: none;
+  border: none;
+  color: blue;
+  background-color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 5px;
+  width: 600px;
+  height: 448px;
+  justify-self: center;
+  margin-top: 70px;
+  box-shadow: black;
+  justify-content: center;
+}
+.sidebar {
+  background-image: url(./images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+
+  height: 448px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-direction: column;
+  color: white;
+  list-style-type: circle;
+  justify-content: flex-start;
+}
+.lock {
+  margin-top: 68px;
+}
+.lock span {
+  padding-left: 15px;
+}
+.milk span {
+  padding-left: 15px;
+}
+.big {
+  display: flex;
+  align-items: center;
+  /* justify-self: center; */
+  width: 100%;
+  flex-direction: column;
+  gap: 13px;
+  margin:45px;
+  cursor: pointer;
+}
+.thank {
+  align-items: center;
+}
+
+.commend{
+    font-weight: 900;
+}
+.end{
+    color:grey ;
+    font-size: 10px;
+    text-align-last:center ;
+}
+@media (max-width: 768px) {
+  .flex-container {
+    width: 500px;
+    height: 400px;
+    flex-direction: column;
+  }
+  .sidebar {
+    background-image: url(./images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+
+    height: 448px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-direction: row;
+    color: white;
+    list-style-type: circle;
+    justify-content: flex-start;
+  }
+  .next {
+    /* margin-top: 30px; */
+    margin-right: 50%;
+  }
+  .freak {
+    width: 300px;
+  }
+  .big {
+    width: 100%;
+  }
+  .lock {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
