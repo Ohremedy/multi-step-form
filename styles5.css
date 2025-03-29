@@ -2,7 +2,7 @@
 
 body {
   background-color: #eef5ff;
-
+width: 100%;
   font-family: "Poppins", sans-serif;
 }
 * {
@@ -24,14 +24,6 @@ a {
   text-decoration: none;
   color: white;
 }
-.change {
-  text-decoration: none;
-  border: none;
-  color: blue;
-  background-color: white;
-  font-size: 12px;
-  cursor: pointer;
-}
 
 .flex-container {
   display: flex;
@@ -42,7 +34,6 @@ a {
   height: 448px;
   justify-self: center;
   margin-top: 70px;
-  box-shadow: black;
   justify-content: center;
 }
 .sidebar {
@@ -50,25 +41,32 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
+  width: 300px;
 
   height: 448px;
   display: flex;
   align-items: center;
-  gap: 22px;
+  
   flex-direction: column;
   color: white;
-  list-style-type: circle;
+
   justify-content: flex-start;
 }
-.lock {
-  margin-top: 68px;
+.number {
+  background-color: #bee1ff;
+  border-radius: 50%;
+  padding: 17px;
+  justify-content: center;
+  display: flex;
+  width: 2px;
+  height: 2px;
+  position: relative;
+  top: 36px;
+  right: 70px;
+  text-align: center;
 }
-.lock span {
-  padding-left: 15px;
-}
-.milk span {
-  padding-left: 15px;
+li {
+  list-style: none;
 }
 .big {
   display: flex;
@@ -94,9 +92,12 @@ a {
 }
 @media (max-width: 768px) {
   .flex-container {
-    width: 500px;
+    width: 600px;
     height: 400px;
     flex-direction: column;
+    position: relative;
+    background-color: none;
+    justify-content: center;
   }
   .sidebar {
     background-image: url(./images/bg-sidebar-mobile.svg);
@@ -104,34 +105,57 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     width: 500px;
-
-    height: 448px;
+    position: absolute;
+    height: 148px;
     display: flex;
     align-items: center;
     gap: 22px;
     flex-direction: row;
     color: white;
-    list-style-type: circle;
-    justify-content: flex-start;
+    list-style-type: none;
+    justify-content:center;
+    z-index:1;
+    top: -10px;
   }
-  .next {
-    /* margin-top: 30px; */
-    margin-right: 50%;
-  }
+  
+  
   .freak {
     width: 300px;
   }
-  .big {
-    width: 100%;
+  .big{
+    width:300px;
+    height:300px;
+    position: relative;
+    z-index: 2;
+    margin: 0px 5px;
+    border-radius: 10px;
+    top:1px;
+    padding-left: 15px;
+    background-color: white;
+    justify-content: center;
   }
+    
   .lock {
     margin-top: 0px;
+    display: none;
   }
-}
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
+  .number{
+    
+    top: -25px;
+    right: 2px;
+    gap: 55px;
+  }
+  .shadow-box {
+    width: 500px;
+    height: 470px;
+    background-color: #eef5ff;
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    border-radius: 10px;
   }
 }
+
+
